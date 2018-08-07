@@ -1,0 +1,66 @@
+{
+    "name": "flare",
+    "children": [ 
+    {
+        "name": "Items with Similar Ratings in the System",
+        "children": [{
+            "name": "Otoro",
+            "size": 17010
+        }, {
+            "name": "Nino",
+            "size": 5842
+        }, 
+        {
+            "name": "Tomi",
+            "size": 5840
+        }, {
+            "name": "Arigato",
+            "size": 1041
+        }]
+    },
+    {
+        "name": "Items with Similar Content",
+        "children": [{
+            "name": "LaMar",
+            "size": 17010
+        }, {
+            "name": "Chevicheria",
+            "size": 5842
+        }, 
+        {
+            "name": "PeruvianTaste",
+            "size": 5840
+        }]
+    },
+    {
+        "name": "Users with Similar Taste in the System",
+        "children": [{
+            "name": "Cindy",
+            "size": 17010
+        }, {
+            "name": "Sophia",
+            "size": 5842
+        }, 
+        {
+            "name": "Mark",
+            "size": 5840
+        }]
+    },
+    {
+        "name": "Friends with Similar Tastes",
+        "children": [{
+            "name": "George",
+            "size": 17010
+        }, {
+            "name": "Sam",
+            "size": 5842
+        }, 
+        {
+            "name": "Lise",
+            "size": 5840
+        }, {
+            "name": "John",
+            "size": 1041
+        }]
+    }]
+}

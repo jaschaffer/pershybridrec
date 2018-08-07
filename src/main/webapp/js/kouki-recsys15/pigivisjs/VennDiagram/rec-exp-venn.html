@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Venn diagram of Venn diagrams</title>
+<style>
+body {
+font-size : 16px;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+</head>
+
+<body>
+    <div id="venn"></div>
+    <div id="colabel">Similar to artists that you like</div>
+    <div id="cflabel">People who like this artist also like</div>
+    <div id="poplabel">Popular artists</div>
+</body>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="venn.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="pslparser.js"></script>
+
+<script>
+//alert(getTest());
+//set an array for each place in venn
+
+
+var chart = venn.VennDiagram()
+    chart.wrap(false) 
+    .width(640)
+    .height(640);
+
+var div = d3.select("#venn").datum(sets).call(chart);
+div.selectAll("text").style("fill", "white");
+div.selectAll(".venn-circle path").style("fill-opacity", .6);
+var d = document.getElementById('colabel');
+d.style.position = "absolute";
+d.style.left = 230+'px';
+d.style.top = 90+'px';
+var p = document.getElementById('poplabel');
+p.style.position = "absolute";
+p.style.left = 100+'px';
+p.style.top = 500+'px';
+var c = document.getElementById('cflabel');
+c.style.position = "absolute";
+c.style.left = 320+'px';
+c.style.top = 500+'px';
+</script>
+</html>
